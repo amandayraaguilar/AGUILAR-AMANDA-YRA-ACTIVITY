@@ -1,0 +1,54 @@
+SECTION 5: THE RANDOM MODULE
+
+import random
+
+def section5():
+       while True:
+           print("\n=== SECTION 5: THE RANDOM MODULE ===")
+           print("1. Set a seed (so results can be repeated)")
+           print("2. Generate a number with randrange()")
+           print("3. Generate a number with randint()")
+           print("4. Pick a random item from a list with choice()")
+           print("5. Draw several UNIQUE items from a list with sample()")
+           print("0. Back to Main Menu")
+
+choice = input("Enter your choice: ")  
+
+if choice == "1":  
+        seed_value = int(input("Enter seed: "))  
+        random.seed(seed_value)  
+        print("Seed set successfully.")  
+
+elif choice == "2":  
+        start = int(input("Enter start: "))  
+        stop = int(input("Enter stop: "))  
+        step = int(input("Enter step: "))  
+        print("Random number:", random.randrange(start, stop, step))  
+
+elif choice == "3":  
+        start = int(input("Enter minimum value: "))  
+        end = int(input("Enter maximum value: "))  
+        print("Random number:", random.randint(start, end))  
+
+elif choice == "4":  
+        items = input("Enter items separated by commas: ").split(",")  
+        items = [item.strip() for item in items]  
+        print("Random item:", random.choice(items))  
+
+elif choice == "5":  
+        items = input("Enter items separated by commas: ").split(",")  
+        items = [item.strip() for item in items]  
+
+        amount = int(input("How many items do you want to draw? "))  
+
+        if amount <= len(items):  
+            print("Random unique items:", random.sample(items, amount))  
+        else:  
+            print("The number of items cannot be greater than the list.")  
+
+elif choice == "0":  
+        
+        'break'
+
+else:  
+        print("Invalid choice.")
