@@ -1,0 +1,39 @@
+import math
+import random
+
+def section4():
+    while True:
+        print("\n===== SECTION 4: GENERAL-PURPOSE MATH FUNCTIONS =====")
+        print("1. Compute ceil, floor, and trunc of a value")
+        print("2. Compute a factorial")
+        print("3. Compute the hypotenuse of a right triangle")
+        print("0. Back to Main Menu")
+
+choice = input("Enter choice: ")  
+
+
+if choice == "1":  
+        val = float(input("Enter a decimal number: "))  
+        print(f"Original: {val}")  
+        print(f"math.ceil({val}) = {math.ceil(val)}")  
+        print(f"math.floor({val}) = {math.floor(val)}")  
+        print(f"math.trunc({val}) = {math.trunc(val)}")  
+
+elif choice == "2":  
+        n = int(input("Enter a non-negative integer: "))  
+        if n < 0:  
+            print("Factorial not defined for negative numbers.")  
+        else:  
+            print(f"{n}! = {math.factorial(n)}")  
+
+elif choice == "3":  
+        a = float(input("Enter side 1: "))  
+        b = float(input("Enter side 2: "))  
+        print(f"Hypotenuse = {math.hypot(a, b)}")  
+
+elif choice == "0":  
+ 
+ 'break'
+
+else:  
+        print("Invalid choice!")
