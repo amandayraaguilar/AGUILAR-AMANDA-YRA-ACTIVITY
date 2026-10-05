@@ -1,26 +1,23 @@
 using System;
 
- class program
+class program
 {
     static void Main()
     {
         Console.Write("Enter your name: ");
-        string name = console.Readline();
+        string name = Console.ReadLine();
         
         Console.Write("Enter your age: ");
-        string age = console.Readline();
+        string age = Console.ReadLine();
         
         Console.Write("Enter your address: ");
-        string address = console.Readline();
+        string address = Console.ReadLine();
         
         Console.Write("Enter your weight: ");
-        string weight = console.Readline();
-        
-        Console.Write("Enter your adress: ");
-        string adress = console.Readline();
+        string weight = Console.ReadLine();
 
         Console.Write("Enter your height: ");
-        string height = console.Readline();
+        string height = Console.ReadLine();
 
         Console.WriteLine();
         Console.WriteLine("Hello! My name is {name}, I am{age} year old, I live in {Address}, my weight is {weight} kg ang my height is {height} cm."); 
