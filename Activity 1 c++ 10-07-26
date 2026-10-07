@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+     cout<<"To: Juan Dela Cruz "<<endl;
+     cout<<"From: admin@company.com"<<endl;
+     cout<<"Subject: Impotant Notice"<<endl;
+     cout<<endl;
+     cout<<"Dear Juan Dela Cruz"<<endl;
+     cout<<"Your request has been received and is currently  being processed."<<endl;
+     cout<<"Thank you for acessing your message."<<endl; 
+     cout<<"For any question, feel free to reply to this email."<<endl;
+     cout<<endl;
+     cout<<"Customer Support Team"<<endl;
+     cout<<"Best regards,"<<endl;
+
+     return 0;
+  
+}
